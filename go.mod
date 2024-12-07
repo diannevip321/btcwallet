@@ -2,7 +2,7 @@ module github.com/btcsuite/btcwallet
 
 require (
 	github.com/btcsuite/btcd v0.24.2-beta.rc1.0.20240625142744-cc26860b4026
-	github.com/btcsuite/btcd/btcec/v2 v2.2.2
+	github.com/btcsuite/btcd/btcec/v2 v2.3.4
 	github.com/btcsuite/btcd/btcutil v1.1.5
 	github.com/btcsuite/btcd/btcutil/psbt v1.1.8
 	github.com/btcsuite/btcd/chaincfg/chainhash v1.1.0
@@ -30,6 +30,10 @@ require (
 	golang.org/x/term v0.19.0
 	google.golang.org/grpc v1.59.0
 )
+
+replace github.com/btcsuite/btcd => /Users/dianne/Desktop/cse--416/CSE-416/btcd
+
+replace github.com/btcsuite/btcd/btcec/v2 => github.com/btcsuite/btcd/btcec/v2 v2.2.2
 
 require (
 	github.com/aead/siphash v1.0.1 // indirect
